@@ -8,10 +8,10 @@ namespace MongoDBDotNetCore.Controllers {
     [Route ("api/[controller]")]
     public class CustomersController : Controller {
 
-        private CustomerService cs;
+        private CustomerLinQService cs;
 
         public CustomersController () {
-            this.cs = new CustomerService ();
+            this.cs = new CustomerLinQService ();
         }
 
         // GET api/customers
